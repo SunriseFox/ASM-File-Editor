@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="1" column="0" colspan="3">
+     <layout class="QGridLayout" name="gridLayout"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>400</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFILE">
+    <property name="title">
+     <string>文件(&amp;F)</string>
+    </property>
+    <widget class="QMenu" name="menu">
+     <property name="title">
+      <string>最近使用的文件</string>
+     </property>
+    </widget>
+    <addaction name="newFile"/>
+    <addaction name="openFile"/>
+    <addaction name="menu"/>
+    <addaction name="separator"/>
+    <addaction name="saveNormal"/>
+    <addaction name="saveAs"/>
+    <addaction name="separator"/>
+    <addaction name="action_X"/>
+   </widget>
+   <widget class="QMenu" name="menu_E">
+    <property name="title">
+     <string>编辑(&amp;E)</string>
+    </property>
+    <addaction name="action_Z"/>
+    <addaction name="action_Y"/>
+    <addaction name="separator"/>
+    <addaction name="toUpper"/>
+    <addaction name="formatText"/>
+    <addaction name="action_C"/>
+    <addaction name="separator"/>
+    <addaction name="action_2"/>
+   </widget>
+   <widget class="QMenu" name="menu_B">
+    <property name="title">
+     <string>构建(&amp;B)</string>
+    </property>
+    <addaction name="action_R"/>
+    <addaction name="action_B"/>
+    <addaction name="action_Q"/>
+    <addaction name="setArgvAction"/>
+   </widget>
+   <widget class="QMenu" name="menu_D">
+    <property name="title">
+     <string>调试(&amp;D)</string>
+    </property>
+    <addaction name="debugAction"/>
+    <addaction name="gDebugAction"/>
+    <addaction name="manualAction"/>
+   </widget>
+   <widget class="QMenu" name="menu_H">
+    <property name="title">
+     <string>帮助(&amp;H)</string>
+    </property>
+    <addaction name="setColor"/>
+    <addaction name="aboutAction"/>
+   </widget>
+   <addaction name="menuFILE"/>
+   <addaction name="menu_E"/>
+   <addaction name="menu_B"/>
+   <addaction name="menu_D"/>
+   <addaction name="menu_H"/>
+  </widget>
+  <action name="newFile">
+   <property name="text">
+    <string>新建(&amp;N)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="saveNormal">
+   <property name="text">
+    <string>保存(&amp;S)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="saveAs">
+   <property name="text">
+    <string>另存为</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+S</string>
+   </property>
+  </action>
+  <action name="action_X">
+   <property name="text">
+    <string>退出(&amp;X)</string>
+   </property>
+  </action>
+  <action name="action_Z">
+   <property name="text">
+    <string>撤销(&amp;Z)</string>
+   </property>
+  </action>
+  <action name="action_Y">
+   <property name="text">
+    <string>恢复(&amp;Y)</string>
+   </property>
+  </action>
+  <action name="action_R">
+   <property name="text">
+    <string>编译并运行(&amp;R)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R</string>
+   </property>
+  </action>
+  <action name="action_B">
+   <property name="text">
+    <string>仅构建(&amp;B)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+B</string>
+   </property>
+  </action>
+  <action name="action_Q">
+   <property name="text">
+    <string>仅运行(&amp;Q)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="debugAction">
+   <property name="text">
+    <string>启动调试(&amp;D)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+D</string>
+   </property>
+  </action>
+  <action name="openFile">
+   <property name="text">
+    <string>打开(&amp;O)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="toUpper">
+   <property name="text">
+    <string>转为大写</string>
+   </property>
+   <property name="toolTip">
+    <string>选区转为大写</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+U</string>
+   </property>
+  </action>
+  <action name="formatText">
+   <property name="text">
+    <string>格式化文档(&amp;Tab)</string>
+   </property>
+  </action>
+  <action name="aboutAction">
+   <property name="text">
+    <string>关于(&amp;A)</string>
+   </property>
+  </action>
+  <action name="setArgvAction">
+   <property name="text">
+    <string>设置启动参数</string>
+   </property>
+   <property name="shortcut">
+    <string>F4</string>
+   </property>
+  </action>
+  <action name="gDebugAction">
+   <property name="text">
+    <string>图形化调试</string>
+   </property>
+   <property name="shortcut">
+    <string>F5</string>
+   </property>
+  </action>
+  <action name="manualAction">
+   <property name="text">
+    <string>手动模式</string>
+   </property>
+   <property name="shortcut">
+    <string>F6</string>
+   </property>
+  </action>
+  <action name="action_C">
+   <property name="text">
+    <string>注释选定块(&amp;C)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+;</string>
+   </property>
+  </action>
+  <action name="setColor">
+   <property name="text">
+    <string>配色设置(&amp;C)</string>
+   </property>
+  </action>
+  <action name="action_2">
+   <property name="text">
+    <string>查找和替换...</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+F, Ctrl+H</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
